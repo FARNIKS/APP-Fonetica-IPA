@@ -23,29 +23,38 @@
                         <Insets left="20.0" right="10.0" />
                      </HBox.margin>
                   </Label>
-                  <Button mnemonicParsing="false" text="Button">
+                  <Button fx:id="btnHome" mnemonicParsing="false" onMouseClicked="#eventMenu" prefHeight="40.0" prefWidth="40.0">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                      <font>
                         <Font name="Century Gothic Bold" size="13.0" />
                      </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" text="Button">
+                  <Button fx:id="btnMode" mnemonicParsing="false" onMouseClicked="#eventMenu" prefHeight="40.0" prefWidth="40.0">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                      <font>
                         <Font name="Century Gothic Bold" size="13.0" />
                      </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" text="Button">
+                  <Button fx:id="btnGithub" mnemonicParsing="false" onMouseClicked="#eventMenu" prefHeight="40.0" prefWidth="40.0">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                      <font>
                         <Font name="Century Gothic Bold" size="13.0" />
                      </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
                   </Button>
                </children>
             </HBox>
@@ -53,7 +62,7 @@
                <children>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
+                        <Button fx:id="btnConsonant1" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -64,7 +73,7 @@
                               <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation1" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -73,7 +82,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
+                        <Button fx:id="btnConsonant2" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -84,7 +93,7 @@
                               <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation2" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -93,7 +102,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
+                        <Button fx:id="btnConsonant3" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -104,7 +113,7 @@
                               <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation3" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -113,7 +122,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
+                        <Button fx:id="btnConsonant4" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -124,7 +133,7 @@
                               <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation4" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -133,7 +142,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
+                        <Button fx:id="btnConsonant5" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -144,114 +153,7 @@
                               <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
-                           <font>
-                              <Font name="Century Gothic Bold" size="13.0" />
-                           </font>
-                        </Button>
-                     </children>
-                  </VBox>
-               </children>
-               <padding>
-                  <Insets left="15.0" right="15.0" />
-               </padding>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="127.0" prefWidth="412.0">
-               <children>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                     <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
-                           <VBox.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </VBox.margin>
-                           <font>
-                              <Font name="Century Gothic Bold" size="13.0" />
-                           </font>
-                           <graphic>
-                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
-                           <font>
-                              <Font name="Century Gothic Bold" size="13.0" />
-                           </font>
-                        </Button>
-                     </children>
-                  </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                     <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
-                           <VBox.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </VBox.margin>
-                           <font>
-                              <Font name="Century Gothic Bold" size="13.0" />
-                           </font>
-                           <graphic>
-                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
-                           <font>
-                              <Font name="Century Gothic Bold" size="13.0" />
-                           </font>
-                        </Button>
-                     </children>
-                  </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                     <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
-                           <VBox.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </VBox.margin>
-                           <font>
-                              <Font name="Century Gothic Bold" size="13.0" />
-                           </font>
-                           <graphic>
-                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
-                           <font>
-                              <Font name="Century Gothic Bold" size="13.0" />
-                           </font>
-                        </Button>
-                     </children>
-                  </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                     <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
-                           <VBox.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </VBox.margin>
-                           <font>
-                              <Font name="Century Gothic Bold" size="13.0" />
-                           </font>
-                           <graphic>
-                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
-                           <font>
-                              <Font name="Century Gothic Bold" size="13.0" />
-                           </font>
-                        </Button>
-                     </children>
-                  </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                     <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
-                           <VBox.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </VBox.margin>
-                           <font>
-                              <Font name="Century Gothic Bold" size="13.0" />
-                           </font>
-                           <graphic>
-                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation5" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -267,7 +169,7 @@
                <children>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
+                        <Button fx:id="btnConsonant6" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -278,7 +180,7 @@
                               <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation6" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -287,7 +189,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
+                        <Button fx:id="btnConsonant7" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -298,7 +200,7 @@
                               <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation7" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -307,7 +209,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
+                        <Button fx:id="btnConsonant8" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -318,7 +220,7 @@
                               <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation8" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -327,7 +229,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
+                        <Button fx:id="btnConsonant9" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -338,7 +240,7 @@
                               <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation9" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -347,7 +249,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0">
+                        <Button fx:id="btnConsonant10" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -358,7 +260,114 @@
                               <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation10" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="15.0" right="15.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="127.0" prefWidth="412.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnConsonant11" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnMoreInformation11" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnConsonant12" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnMoreInformation12" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnConsonant13" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnMoreInformation13" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnConsonant14" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnMoreInformation14" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnConsonant15" mnemonicParsing="false" onMouseClicked="#eventButtonConsonantsSounds" prefHeight="60.0" prefWidth="60.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnMoreInformation15" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformationConsonants" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>

@@ -1,6 +1,7 @@
 module com.farniks.appfoneticaipa {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.media;
 
 
     opens com.farniks.appfoneticaipa to javafx.fxml;

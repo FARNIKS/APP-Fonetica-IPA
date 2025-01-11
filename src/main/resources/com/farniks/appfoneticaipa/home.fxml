@@ -22,26 +22,12 @@
                         <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
                      </HBox.margin>
                   </Label>
-                  <Button mnemonicParsing="false" text="Mode">
+                  <Button fx:id="btnMode" mnemonicParsing="false" text="Mode">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" text="Githup">
-                     <HBox.margin>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                     </HBox.margin>
-                  </Button>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="180.0" prefWidth="412.0">
-               <children>
-                  <Button mnemonicParsing="false" prefHeight="170.0" prefWidth="170.0" text="Vocales">
-                     <HBox.margin>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button mnemonicParsing="false" prefHeight="170.0" prefWidth="170.0" text="Diptongos">
+                  <Button fx:id="btnGithub" mnemonicParsing="false" text="Githup">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
@@ -50,12 +36,26 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="180.0" prefWidth="412.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="170.0" prefWidth="170.0" text="Consonantes sin voz">
+                  <Button fx:id="btnVocales" mnemonicParsing="false" onAction="#eventButtonsPageChange" prefHeight="170.0" prefWidth="170.0" text="Vocales">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="170.0" prefWidth="170.0" text="Consonantes con voz">
+                  <Button fx:id="btnDiptongos" mnemonicParsing="false" onAction="#eventButtonsPageChange" prefHeight="170.0" prefWidth="170.0" text="Diptongos">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="180.0" prefWidth="412.0">
+               <children>
+                  <Button fx:id="btnConsonantesSinVoz" mnemonicParsing="false" onAction="#eventButtonsPageChange" prefHeight="170.0" prefWidth="170.0" text="Consonantes sin voz">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnConsonantesConVoz" mnemonicParsing="false" onAction="#eventButtonsPageChange" prefHeight="170.0" prefWidth="170.0" text="Consonantes con voz">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
