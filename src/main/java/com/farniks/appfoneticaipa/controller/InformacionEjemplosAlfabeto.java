@@ -8,4 +8,13 @@ public class InformacionEjemplosAlfabeto {
 
     public void eventMenu(MouseEvent mouseEvent) {
     }
+
+    public void eventScroll(MouseEvent mouseEvent) {
+    }
+
+    public void eventSoundsExamplesSentences(MouseEvent mouseEvent) {
+    }
+
+    public void eventButtonInformation(MouseEvent mouseEvent) {
+    }
 }

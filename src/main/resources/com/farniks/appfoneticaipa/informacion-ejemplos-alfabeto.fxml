@@ -161,7 +161,7 @@
                                        </cursor>
                                     </Button>
                                     <Label fx:id="lbExample3" text="Label" />
-                                 </children>
+                                 </children>wa
                                  <padding>
                                     <Insets left="10.0" />
                                  </padding>

@@ -146,7 +146,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnDiphthong4" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnDiphthong5" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="70.0" prefWidth="70.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
