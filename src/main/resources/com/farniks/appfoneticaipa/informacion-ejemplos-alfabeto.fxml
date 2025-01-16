@@ -103,7 +103,7 @@
                            <children>
                               <HBox alignment="CENTER" prefHeight="35.0" prefWidth="252.0">
                                  <children>
-                                    <Button fx:id="btnSentenseSound" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" text="+">
+                                    <Button fx:id="btnSentenceSound" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" text="+">
                                        <HBox.margin>
                                           <Insets left="10.0" right="10.0" />
                                        </HBox.margin>
@@ -161,7 +161,7 @@
                                        </cursor>
                                     </Button>
                                     <Label fx:id="lbExample3" text="Label" />
-                                 </children>wa
+                                 </children>
                                  <padding>
                                     <Insets left="10.0" />
                                  </padding>

@@ -2,6 +2,7 @@ module com.farniks.appfoneticaipa {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.media;
+    requires java.desktop;
 
 
     opens com.farniks.appfoneticaipa to javafx.fxml;

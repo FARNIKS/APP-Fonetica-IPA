@@ -7,9 +7,9 @@ import javafx.scene.media.MediaPlayer;
 
 public class Home {
     @FXML
-    Button btnMode,btnGithub,btnVocales,btnDiptongos,btnConsonantesConVoz,btnConsonantesSinVoz;
+    Button btnMode,btnGithub,
+            btnVocales,btnDiptongos,btnConsonantesConVoz,btnConsonantesSinVoz;
 
-    @FXML
     private final ChangePage changePage = new ChangePage();
 
     public Home() {
