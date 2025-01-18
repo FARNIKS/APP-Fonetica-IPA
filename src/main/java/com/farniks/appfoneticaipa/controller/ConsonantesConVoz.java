@@ -11,18 +11,9 @@ import java.net.URISyntaxException;
 
 public class ConsonantesConVoz {
     @FXML
-    Button btnHome,btnMode,btnGithub;
-
-    @FXML
-    Button btnConsonant1, btnConsonant2, btnConsonant3, btnConsonant4, btnConsonant5,
-            btnConsonant6, btnConsonant7, btnConsonant8, btnConsonant9, btnConsonant10,
-            btnConsonant11, btnConsonant12, btnConsonant13, btnConsonant14, btnConsonant15;
-
-    @FXML
-    Button btnMoreInformation1, btnMoreInformation2, btnMoreInformation3, btnMoreInformation4, btnMoreInformation5,
-            btnMoreInformation6,btnMoreInformation7,btnMoreInformation8,btnMoreInformation9,btnMoreInformation10,
-            btnMoreInformation11,btnMoreInformation12,btnMoreInformation13,btnMoreInformation14,btnMoreInformation15;
-
+    Button btnHome,btnMode,btnGithub,
+            btnConsonant1, btnConsonant2, btnConsonant3, btnConsonant4, btnConsonant5, btnConsonant6, btnConsonant7, btnConsonant8, btnConsonant9, btnConsonant10, btnConsonant11, btnConsonant12, btnConsonant13, btnConsonant14, btnConsonant15,btnConsonant16,
+            btnMoreInformation1, btnMoreInformation2, btnMoreInformation3, btnMoreInformation4, btnMoreInformation5, btnMoreInformation6,btnMoreInformation7,btnMoreInformation8,btnMoreInformation9,btnMoreInformation10, btnMoreInformation11,btnMoreInformation12,btnMoreInformation13,btnMoreInformation14,btnMoreInformation15,btnMoreInformation16;
 
     private final ChangePage changePage = new ChangePage();
 

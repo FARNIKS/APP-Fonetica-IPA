@@ -33,7 +33,7 @@ public class ChangePage {
 
             // Load the FXML file using a FXMLLoader
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(url));
-            Scene scene = new Scene(fxmlLoader.load(), 412, 440);
+            Scene scene = new Scene(fxmlLoader.load(), 412, 480);
             stage.setScene(scene);
 
             // Create a new Stage and configure its appearance

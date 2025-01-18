@@ -9,19 +9,22 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farniks.appfoneticaipa.controller.Vocales">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farniks.appfoneticaipa.controller.Vocales">
    <children>
-      <VBox prefHeight="440.0" prefWidth="412.0">
+      <VBox prefHeight="480.0" prefWidth="412.0">
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="412.0">
                <children>
-                  <Label text="Vocales">
+                  <Label text="Vowels">
                      <font>
                         <Font name="Century Gothic Bold" size="36.0" />
                      </font>
                      <HBox.margin>
-                        <Insets left="10.0" right="50.0" />
+                        <Insets />
                      </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" right="80.0" />
+                     </padding>
                   </Label>
                   <Button fx:id="btnHome" mnemonicParsing="false" onMouseClicked="#eventMenu" prefHeight="40.0" prefWidth="40.0">
                      <HBox.margin>
@@ -57,12 +60,15 @@
                      </graphic>
                   </Button>
                </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="127.0" prefWidth="412.0">
+            <HBox alignment="CENTER" prefHeight="135.0" prefWidth="412.0">
                <children>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnSoundVocal1" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnSoundVocal1" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="80.0" prefWidth="80.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -70,7 +76,11 @@
                               <Font name="Century Gothic Bold" size="18.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="iː">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation1" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -82,7 +92,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnSoundVocal2" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnSoundVocal2" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="80.0" prefWidth="80.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -90,7 +100,11 @@
                               <Font name="Century Gothic Bold" size="24.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label prefHeight="8.0" prefWidth="7.0" text="ɪ">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation2" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -102,7 +116,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnSoundVocal3" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnSoundVocal3" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="80.0" prefWidth="80.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -110,7 +124,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="e">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation3" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -122,7 +140,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnSoundVocal4" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnSoundVocal4" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="80.0" prefWidth="80.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -130,7 +148,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="æ">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation4" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -142,11 +164,11 @@
                   </VBox>
                </children>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="127.0" prefWidth="412.0">
+            <HBox alignment="CENTER" prefHeight="135.0" prefWidth="412.0">
                <children>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnSoundVocal5" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnSoundVocal5" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="80.0" prefWidth="80.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -154,7 +176,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="ɑː">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation5" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -166,7 +192,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnSoundVocal6" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnSoundVocal6" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="80.0" prefWidth="80.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -174,7 +200,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="ɒ">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation6" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -186,7 +216,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnSoundVocal7" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnSoundVocal7" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="80.0" prefWidth="80.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -194,7 +224,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="ɔː">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation7" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -206,7 +240,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnSoundVocal8" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnSoundVocal8" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="80.0" prefWidth="80.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -214,7 +248,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="ʊ">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation8" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -226,11 +264,11 @@
                   </VBox>
                </children>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="127.0" prefWidth="412.0">
+            <HBox alignment="CENTER" prefHeight="135.0" prefWidth="412.0">
                <children>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnSoundVocal9" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnSoundVocal9" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="80.0" prefWidth="80.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -238,7 +276,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="uː">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation9" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -250,7 +292,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnSoundVocal10" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnSoundVocal10" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="80.0" prefWidth="80.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -258,7 +300,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="ʌ">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation10" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -270,7 +316,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnSoundVocal11" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnSoundVocal11" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="80.0" prefWidth="80.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -278,10 +324,38 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="ɜː">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation11" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnSoundVocal111" mnemonicParsing="false" onMouseClicked="#eventButtonsVocalSounds" prefHeight="80.0" prefWidth="80.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <Label prefHeight="31.0" prefWidth="18.0" text="ə">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnMoreInformation12" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>

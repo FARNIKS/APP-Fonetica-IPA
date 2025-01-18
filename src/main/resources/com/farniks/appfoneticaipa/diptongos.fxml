@@ -9,19 +9,22 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farniks.appfoneticaipa.controller.Diptongos">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farniks.appfoneticaipa.controller.Diptongos">
    <children>
-      <VBox prefHeight="440.0" prefWidth="412.0">
+      <VBox prefHeight="480.0" prefWidth="412.0">
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="412.0">
                <children>
-                  <Label text="Diptongos">
+                  <Label text="Diphthongs">
                      <font>
                         <Font name="Century Gothic Bold" size="36.0" />
                      </font>
                      <HBox.margin>
-                        <Insets left="10.0" right="10.0" />
+                        <Insets />
                      </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
                   </Label>
                   <Button fx:id="btnHome" mnemonicParsing="false" onMouseClicked="#eventMenu" prefHeight="40.0" prefWidth="40.0">
                      <HBox.margin>
@@ -57,12 +60,15 @@
                      </graphic>
                   </Button>
                </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="127.0" prefWidth="412.0">
+            <HBox alignment="CENTER" prefHeight="135.0" prefWidth="412.0">
                <children>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnDiphthong1" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnDiphthong1" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="90.0" prefWidth="90.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -70,7 +76,11 @@
                               <Font name="Century Gothic Bold" size="24.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="eɪ">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation1" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -82,7 +92,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnDiphthong2" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnDiphthong2" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="90.0" prefWidth="90.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -90,7 +100,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="aɪ">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation2" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -102,7 +116,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnDiphthong3" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnDiphthong3" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="90.0" prefWidth="90.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -110,7 +124,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="ɔɪ">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation3" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -122,11 +140,11 @@
                   </VBox>
                </children>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="127.0" prefWidth="412.0">
+            <HBox alignment="CENTER" prefHeight="135.0" prefWidth="412.0">
                <children>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnDiphthong4" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnDiphthong4" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="90.0" prefWidth="90.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -134,7 +152,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="aʊ">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation4" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -146,7 +168,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnDiphthong5" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnDiphthong5" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="90.0" prefWidth="90.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -154,7 +176,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="ʊe">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation5" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -166,7 +192,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnDiphthong6" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnDiphthong6" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="90.0" prefWidth="90.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -174,7 +200,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="ɪe">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation6" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -186,11 +216,11 @@
                   </VBox>
                </children>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="127.0" prefWidth="412.0">
+            <HBox alignment="CENTER" prefHeight="135.0" prefWidth="412.0">
                <children>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnDiphthong7" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnDiphthong7" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="90.0" prefWidth="90.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -198,7 +228,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="eə">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation7" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
@@ -210,7 +244,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnDiphthong8" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="70.0" prefWidth="70.0">
+                        <Button fx:id="btnDiphthong8" mnemonicParsing="false" onMouseClicked="#eventButtonsDiphthongsSounds" prefHeight="90.0" prefWidth="90.0">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -218,7 +252,11 @@
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
                            <graphic>
-                              <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="əʊ">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
                            </graphic>
                         </Button>
                         <Button fx:id="btnMoreInformation8" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">

@@ -5,6 +5,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.media.MediaPlayer;
 
+import javax.print.attribute.standard.Media;
+
 public class Home {
     @FXML
     Button btnMode,btnGithub,

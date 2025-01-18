@@ -10,19 +10,22 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farniks.appfoneticaipa.controller.InformacionEjemplosAlfabeto">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farniks.appfoneticaipa.controller.InformacionEjemplosAlfabeto">
    <children>
-      <VBox prefHeight="440.0" prefWidth="412.0">
+      <VBox prefHeight="480.0" prefWidth="412.0">
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="412.0">
                <children>
-                  <Label text="Información">
+                  <Label text="Information">
                      <font>
                         <Font name="Century Gothic Bold" size="30.0" />
                      </font>
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
                   </Label>
                   <Button fx:id="btnHome" mnemonicParsing="false" onMouseClicked="#eventMenu" prefHeight="40.0" prefWidth="40.0">
                      <HBox.margin>
@@ -82,24 +85,25 @@
                   </Button>
                </children>
             </HBox>
-            <HBox prefHeight="380.0" prefWidth="412.0">
+            <HBox prefHeight="420.0" prefWidth="412.0">
                <children>
                   <VBox alignment="CENTER" prefHeight="380.0" prefWidth="80.0">
                      <children>
-                        <Button fx:id="btnPrevious" mnemonicParsing="false" onMouseClicked="#eventScroll" prefHeight="350.0" prefWidth="52.0" text="&lt;">
+                        <Button fx:id="btnPrevious" mnemonicParsing="false" onMouseClicked="#eventScroll" prefHeight="390.0" prefWidth="52.0" text="&lt;">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="TOP_CENTER" prefHeight="380.0" prefWidth="252.0">
+                  <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="252.0">
                      <children>
-                        <ImageView fx:id="imgSymbol" fitHeight="91.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                        <Label fx:id="lbSymbol" alignment="CENTER" prefHeight="91.0" prefWidth="91.0" text="Label">
                            <VBox.margin>
                               <Insets top="20.0" />
-                           </VBox.margin></ImageView>
-                        <VBox prefHeight="243.0" prefWidth="252.0">
+                           </VBox.margin>
+                        </Label>
+                        <VBox prefHeight="298.0" prefWidth="252.0">
                            <children>
                               <HBox alignment="CENTER" prefHeight="35.0" prefWidth="252.0">
                                  <children>
@@ -220,7 +224,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="380.0" prefWidth="80.0">
                      <children>
-                        <Button fx:id="btnNext" mnemonicParsing="false" onMouseClicked="#eventScroll" prefHeight="350.0" prefWidth="52.0" text="&gt;">
+                        <Button fx:id="btnNext" mnemonicParsing="false" onMouseClicked="#eventScroll" prefHeight="390.0" prefWidth="52.0" text="&gt;">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor></Button>

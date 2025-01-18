@@ -3,14 +3,15 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farniks.appfoneticaipa.controller.Home">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farniks.appfoneticaipa.controller.Home">
    <children>
-      <VBox layoutY="-1.0" prefHeight="440.0" prefWidth="412.0">
+      <VBox layoutY="-1.0" prefHeight="480.0" prefWidth="412.0">
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="412.0">
                <children>
@@ -21,44 +22,81 @@
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
                      </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
                   </Label>
-                  <Button fx:id="btnMode" mnemonicParsing="false" text="Mode">
+                  <Button fx:id="btnMode" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
                   </Button>
-                  <Button fx:id="btnGithub" mnemonicParsing="false" text="Githup">
+                  <Button fx:id="btnGithub" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
-                  </Button>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="180.0" prefWidth="412.0">
-               <children>
-                  <Button fx:id="btnVocales" mnemonicParsing="false" onAction="#eventButtonsPageChange" prefHeight="170.0" prefWidth="170.0" text="Vocales">
-                     <HBox.margin>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button fx:id="btnDiptongos" mnemonicParsing="false" onAction="#eventButtonsPageChange" prefHeight="170.0" prefWidth="170.0" text="Diptongos">
-                     <HBox.margin>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
                   </Button>
                </children>
             </HBox>
+            <Label text="VOWELS">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="183.0" prefWidth="412.0">
+               <children>
+                  <Button fx:id="btnVocales" mnemonicParsing="false" onAction="#eventButtonsPageChange" prefHeight="170.0" prefWidth="170.0" text="MONOPHTHONGS">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Century Gothic Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDiptongos" mnemonicParsing="false" onAction="#eventButtonsPageChange" prefHeight="170.0" prefWidth="170.0" text="DIPHTHONGS">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Century Gothic Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label text="CONSONANTS">
+               <padding>
+                  <Insets left="30.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Label>
             <HBox alignment="CENTER" prefHeight="180.0" prefWidth="412.0">
                <children>
-                  <Button fx:id="btnConsonantesSinVoz" mnemonicParsing="false" onAction="#eventButtonsPageChange" prefHeight="170.0" prefWidth="170.0" text="Consonantes sin voz">
+                  <Button fx:id="btnConsonantesSinVoz" mnemonicParsing="false" onAction="#eventButtonsPageChange" prefHeight="170.0" prefWidth="170.0" text="UNVOICED">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="Century Gothic Bold" size="16.0" />
+                     </font>
                   </Button>
-                  <Button fx:id="btnConsonantesConVoz" mnemonicParsing="false" onAction="#eventButtonsPageChange" prefHeight="170.0" prefWidth="170.0" text="Consonantes con voz">
+                  <Button fx:id="btnConsonantesConVoz" mnemonicParsing="false" onAction="#eventButtonsPageChange" prefHeight="170.0" prefWidth="170.0" text="VOICED">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="Century Gothic Bold" size="16.0" />
+                     </font>
                   </Button>
                </children>
             </HBox>
