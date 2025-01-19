@@ -6,7 +6,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.MouseEvent;
 
-public class PronunciacionFonetica {
+public class PronunciationIpaController {
     @FXML
     Button btnHome, btnPreview,btnGithub,btnMode,
             btnSoundExample;
@@ -17,7 +17,7 @@ public class PronunciacionFonetica {
     @FXML
     TextArea taInformationPronunciation;
 
-    public PronunciacionFonetica() {
+    public PronunciationIpaController() {
     }
 
     public void evenSoundExample(MouseEvent mouseEvent) {

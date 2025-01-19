@@ -3,16 +3,14 @@ package com.farniks.appfoneticaipa.controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
 import java.awt.*;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URL;
 
-public class Vocales {
+public class VowelsMonophthongsController {
     @FXML
     Button btnHome, btnMode, btnGithub,
             btnSoundVocal1, btnSoundVocal2, btnSoundVocal3, btnSoundVocal4, btnSoundVocal5, btnSoundVocal6,btnSoundVocal7,btnSoundVocal8,btnSoundVocal9,btnSoundVocal10,btnSoundVocal11,btnSoundVocal12,
@@ -22,7 +20,9 @@ public class Vocales {
 
     private MediaPlayer mediaPlayer;
 
-    public Vocales() {
+    private SoundsPhonetics soundsPhonetics;
+
+    public VowelsMonophthongsController() {
 
     }
     public void eventMenu(MouseEvent mouseEvent) {
@@ -69,20 +69,38 @@ public class Vocales {
             musicFile = "/media/Vocal12.mp3";
         }
 
-        URL resource = getClass().getResource(musicFile);
-        if (resource != null) {
-            Media sound = new Media(((URL) resource).toString());
-            mediaPlayer = new MediaPlayer(sound);
-            mediaPlayer.setVolume(0.1);
-            // Play the music when you start the driver instance
-            mediaPlayer.play();
-        } else {
-            System.err.println("No se pudo encontrar el archivo de música.");
-        }
+        soundsPhonetics = new SoundsPhonetics(musicFile);
 
 
     }
 
     public void eventButtonsMoreInformation(MouseEvent mouseEvent) {
+        Button sourceButton = (Button) mouseEvent.getSource();
+        if (sourceButton == btnMoreInformation1) {
+
+        }else if (sourceButton == btnMoreInformation2) {
+
+        }else if (sourceButton == btnMoreInformation3) {
+
+        }else if (sourceButton == btnMoreInformation4) {
+
+        }else if (sourceButton == btnMoreInformation5) {
+
+        }else if (sourceButton == btnMoreInformation6) {
+
+        }else if (sourceButton == btnMoreInformation7) {
+
+        }else if (sourceButton == btnMoreInformation8) {
+
+        }else if (sourceButton == btnMoreInformation9) {
+
+        }else if (sourceButton == btnMoreInformation10) {
+
+        }else if (sourceButton == btnMoreInformation11) {
+
+        }else if (sourceButton == btnMoreInformation12) {
+
+        }
+        changePage.loadStage("information-example-ipa.fxml", mouseEvent, "Vocales");
     }
 }

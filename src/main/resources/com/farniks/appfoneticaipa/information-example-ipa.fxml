@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farniks.appfoneticaipa.controller.InformacionEjemplosAlfabeto">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farniks.appfoneticaipa.controller.InformationExampleIpaController">
    <children>
       <VBox prefHeight="480.0" prefWidth="412.0">
          <children>
@@ -102,6 +102,9 @@
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
+                           <font>
+                              <Font name="Century" size="36.0" />
+                           </font>
                         </Label>
                         <VBox prefHeight="298.0" prefWidth="252.0">
                            <children>
@@ -115,7 +118,10 @@
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
                                     </Button>
-                                    <Label fx:id="lbSentence" text="Label" />
+                                    <Label fx:id="lbSentence" text="Label">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font></Label>
                                     <Button fx:id="btnMoreInformation" mnemonicParsing="false" onMouseClicked="#eventButtonInformation" style="-fx-translate-x: -10; -fx-translate-y: -90;" text="+">
                                        <cursor>
                                           <Cursor fx:constant="HAND" />
@@ -132,7 +138,10 @@
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
                                     </Button>
-                                    <Label fx:id="lbExample1" text="Label" />
+                                    <Label fx:id="lbExample1" text="Label">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font></Label>
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
@@ -148,7 +157,10 @@
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
                                     </Button>
-                                    <Label fx:id="lbExample2" text="Label" />
+                                    <Label fx:id="lbExample2" text="Label">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font></Label>
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
@@ -164,7 +176,10 @@
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
                                     </Button>
-                                    <Label fx:id="lbExample3" text="Label" />
+                                    <Label fx:id="lbExample3" text="Label">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font></Label>
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
@@ -180,7 +195,10 @@
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
                                     </Button>
-                                    <Label fx:id="lbExample4" text="Label" />
+                                    <Label fx:id="lbExample4" text="Label">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font></Label>
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
@@ -196,7 +214,10 @@
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
                                     </Button>
-                                    <Label fx:id="lbExample5" text="Label" />
+                                    <Label fx:id="lbExample5" text="Label">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font></Label>
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
@@ -212,7 +233,10 @@
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
                                     </Button>
-                                    <Label fx:id="lbExample6" text="Label" />
+                                    <Label fx:id="lbExample6" text="Label">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font></Label>
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />

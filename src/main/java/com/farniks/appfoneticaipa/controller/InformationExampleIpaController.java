@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-public class InformacionEjemplosAlfabeto {
+public class InformationExampleIpaController {
     @FXML
     Button btnHome, btnMenu, btnMode, btnGithub,
             btnMoreInformation,
@@ -23,7 +23,7 @@ public class InformacionEjemplosAlfabeto {
 
     private final ChangePage changePage = new ChangePage();
 
-    public InformacionEjemplosAlfabeto() {
+    public InformationExampleIpaController() {
     }
 
     public void eventMenu(MouseEvent mouseEvent) {
@@ -49,4 +49,5 @@ public class InformacionEjemplosAlfabeto {
 
     public void eventButtonInformation(MouseEvent mouseEvent) {
     }
+
 }
