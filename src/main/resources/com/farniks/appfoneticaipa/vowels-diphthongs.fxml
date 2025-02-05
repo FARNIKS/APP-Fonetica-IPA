@@ -93,7 +93,7 @@
                               </Label>
                            </graphic>
                         </Button>
-                        <Button fx:id="btnMoreInformation1" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation1" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -117,7 +117,7 @@
                               </Label>
                            </graphic>
                         </Button>
-                        <Button fx:id="btnMoreInformation2" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation2" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -141,7 +141,7 @@
                               </Label>
                            </graphic>
                         </Button>
-                        <Button fx:id="btnMoreInformation3" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation3" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -169,7 +169,7 @@
                               </Label>
                            </graphic>
                         </Button>
-                        <Button fx:id="btnMoreInformation4" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation4" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -193,7 +193,7 @@
                               </Label>
                            </graphic>
                         </Button>
-                        <Button fx:id="btnMoreInformation5" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation5" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -217,7 +217,7 @@
                               </Label>
                            </graphic>
                         </Button>
-                        <Button fx:id="btnMoreInformation6" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation6" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -245,7 +245,7 @@
                               </Label>
                            </graphic>
                         </Button>
-                        <Button fx:id="btnMoreInformation7" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation7" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>
@@ -269,7 +269,7 @@
                               </Label>
                            </graphic>
                         </Button>
-                        <Button fx:id="btnMoreInformation8" mnemonicParsing="false" onContextMenuRequested="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
+                        <Button fx:id="btnMoreInformation8" mnemonicParsing="false" onMouseClicked="#eventButtonsMoreInformation" prefHeight="25.0" prefWidth="25.0" text="+">
                            <font>
                               <Font name="Century Gothic Bold" size="13.0" />
                            </font>

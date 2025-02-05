@@ -1,3 +1,4 @@
+
 package com.farniks.appfoneticaipa.controller;
 
 import javafx.fxml.FXML;

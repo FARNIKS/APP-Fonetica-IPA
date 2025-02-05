@@ -8,14 +8,14 @@ import javafx.scene.input.MouseEvent;
 
 public class PronunciationIpaController {
     @FXML
-    Button btnHome, btnPreview,btnGithub,btnMode,
+    private Button btnHome, btnPreview,btnGithub,btnMode,
             btnSoundExample;
 
     @FXML
-    Label lbSentenceExample,lbSymbol;
+    private Label lbSentenceExample,lbSymbol;
 
     @FXML
-    TextArea taInformationPronunciation;
+    private TextArea taInformationPronunciation;
 
     public PronunciationIpaController() {
     }

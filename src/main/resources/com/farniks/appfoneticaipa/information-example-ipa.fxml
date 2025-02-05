@@ -85,28 +85,25 @@
                   </Button>
                </children>
             </HBox>
-            <HBox prefHeight="420.0" prefWidth="412.0">
+            <HBox alignment="CENTER" prefHeight="420.0" prefWidth="412.0">
                <children>
-                  <VBox alignment="CENTER" prefHeight="380.0" prefWidth="80.0">
+                  <VBox alignment="TOP_CENTER" prefHeight="420.0" prefWidth="282.0">
                      <children>
-                        <Button fx:id="btnPrevious" mnemonicParsing="false" onMouseClicked="#eventScroll" prefHeight="390.0" prefWidth="52.0" text="&lt;">
+                        <Button fx:id="btnSymbolSound" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences">
+                           <graphic>
+                              <Label fx:id="lbSymbol" alignment="CENTER" prefHeight="143.0" prefWidth="91.0" text="Label">
+                                 <font>
+                                    <Font name="Century" size="36.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnMoreInformation" mnemonicParsing="false" onMouseClicked="#eventButtonInformation" style="-fx-translate-x: 33; -fx-translate-y: -100;" text="+">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="252.0">
-                     <children>
-                        <Label fx:id="lbSymbol" alignment="CENTER" prefHeight="91.0" prefWidth="91.0" text="Label">
-                           <VBox.margin>
-                              <Insets top="20.0" />
-                           </VBox.margin>
-                           <font>
-                              <Font name="Century" size="36.0" />
-                           </font>
-                        </Label>
-                        <VBox prefHeight="298.0" prefWidth="252.0">
+                        <VBox prefHeight="331.0" prefWidth="282.0" style="-fx-translate-y: -20;">
                            <children>
                               <HBox alignment="CENTER" prefHeight="35.0" prefWidth="252.0">
                                  <children>
@@ -120,15 +117,11 @@
                                     </Button>
                                     <Label fx:id="lbSentence" text="Label">
                                        <font>
-                                          <Font name="Century" size="14.0" />
+                                          <Font name="Century Gothic Bold Italic" size="22.0" />
                                        </font></Label>
-                                    <Button fx:id="btnMoreInformation" mnemonicParsing="false" onMouseClicked="#eventButtonInformation" style="-fx-translate-x: -10; -fx-translate-y: -90;" text="+">
-                                       <cursor>
-                                          <Cursor fx:constant="HAND" />
-                                       </cursor></Button>
                                  </children>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0">
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 30;">
                                  <children>
                                     <Button fx:id="btnExampleSound1" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" text="+">
                                        <HBox.margin>
@@ -140,14 +133,14 @@
                                     </Button>
                                     <Label fx:id="lbExample1" text="Label">
                                        <font>
-                                          <Font name="Century" size="14.0" />
+                                          <Font name="Century Gothic Bold" size="22.0" />
                                        </font></Label>
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
                                  </padding>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0">
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 30;">
                                  <children>
                                     <Button fx:id="btnExampleSound2" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" text="+">
                                        <HBox.margin>
@@ -159,14 +152,14 @@
                                     </Button>
                                     <Label fx:id="lbExample2" text="Label">
                                        <font>
-                                          <Font name="Century" size="14.0" />
+                                          <Font name="Century Gothic Bold" size="22.0" />
                                        </font></Label>
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
                                  </padding>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0">
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 30;">
                                  <children>
                                     <Button fx:id="btnExampleSound3" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" text="+">
                                        <HBox.margin>
@@ -178,14 +171,14 @@
                                     </Button>
                                     <Label fx:id="lbExample3" text="Label">
                                        <font>
-                                          <Font name="Century" size="14.0" />
+                                          <Font name="Century Gothic Bold" size="22.0" />
                                        </font></Label>
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
                                  </padding>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0">
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 30;">
                                  <children>
                                     <Button fx:id="btnExampleSound4" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" text="+">
                                        <HBox.margin>
@@ -197,14 +190,14 @@
                                     </Button>
                                     <Label fx:id="lbExample4" text="Label">
                                        <font>
-                                          <Font name="Century" size="14.0" />
+                                          <Font name="Century Gothic Bold" size="22.0" />
                                        </font></Label>
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
                                  </padding>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0">
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 30;">
                                  <children>
                                     <Button fx:id="btnExampleSound5" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" text="+">
                                        <HBox.margin>
@@ -216,14 +209,14 @@
                                     </Button>
                                     <Label fx:id="lbExample5" text="Label">
                                        <font>
-                                          <Font name="Century" size="14.0" />
+                                          <Font name="Century Gothic Bold" size="22.0" />
                                        </font></Label>
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
                                  </padding>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0">
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 30;">
                                  <children>
                                     <Button fx:id="btnExampleSound6" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" text="+">
                                        <HBox.margin>
@@ -235,7 +228,7 @@
                                     </Button>
                                     <Label fx:id="lbExample6" text="Label">
                                        <font>
-                                          <Font name="Century" size="14.0" />
+                                          <Font name="Century Gothic Bold" size="22.0" />
                                        </font></Label>
                                  </children>
                                  <padding>
@@ -244,14 +237,6 @@
                               </HBox>
                            </children>
                         </VBox>
-                     </children>
-                  </VBox>
-                  <VBox alignment="CENTER" prefHeight="380.0" prefWidth="80.0">
-                     <children>
-                        <Button fx:id="btnNext" mnemonicParsing="false" onMouseClicked="#eventScroll" prefHeight="390.0" prefWidth="52.0" text="&gt;">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor></Button>
                      </children>
                   </VBox>
                </children>
