@@ -27,7 +27,7 @@ public class InformationExampleIpaController {
     private String audioSymbol, audioSentence, audioExample1, audioExample2, audioExample3, audioExample4, audioExample5, audioExample6, urlPage;
 
     public InformationExampleIpaController() {
-
+        this.soundsPhonetics = new SoundsPhonetics(); // Inicializa la instancia
     }
 
     public void eventMenu(MouseEvent mouseEvent) {
@@ -56,24 +56,27 @@ public class InformationExampleIpaController {
 
         if (sourceButton == btnSymbolSound) {
             musicFile = audioSymbol;
-        } else if (sourceButton == btnSentenceSound) {
-            musicFile = audioSentence;
-        } else if (sourceButton == btnExampleSound1) {
-            musicFile = audioExample1;
-        } else if (sourceButton == btnExampleSound2) {
-            musicFile = audioExample2;
-        } else if (sourceButton == btnExampleSound3) {
-            musicFile = audioExample3;
-        } else if (sourceButton == btnExampleSound4) {
-            musicFile = audioExample4;
-        } else if (sourceButton == btnExampleSound5) {
-            musicFile = audioExample5;
-        } else if (sourceButton == btnExampleSound6) {
-            musicFile = audioExample6;
-        }
-
-        if (!musicFile.isEmpty()) {
             soundsPhonetics = new SoundsPhonetics(musicFile);
+        }else {
+            if (sourceButton == btnSentenceSound) {
+                musicFile = audioSentence;
+            } else if (sourceButton == btnExampleSound1) {
+                musicFile = audioExample1;
+            } else if (sourceButton == btnExampleSound2) {
+                musicFile = audioExample2;
+            } else if (sourceButton == btnExampleSound3) {
+                musicFile = audioExample3;
+            } else if (sourceButton == btnExampleSound4) {
+                musicFile = audioExample4;
+            } else if (sourceButton == btnExampleSound5) {
+                musicFile = audioExample5;
+            } else if (sourceButton == btnExampleSound6) {
+                musicFile = audioExample6;
+            }
+
+            if (!musicFile.isEmpty()) {
+                soundsPhonetics.soundsExamples(musicFile);
+            }
         }
     }
 
