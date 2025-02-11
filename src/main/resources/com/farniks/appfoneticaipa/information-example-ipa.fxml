@@ -4,6 +4,7 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
@@ -35,7 +36,10 @@
                         <Font name="Century Gothic Bold" size="13.0" />
                      </font>
                      <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/hogar.png" />
+                           </image></ImageView>
                      </graphic>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -49,7 +53,10 @@
                         <Font name="Century Gothic Bold" size="13.0" />
                      </font>
                      <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/aplicaciones.png" />
+                           </image></ImageView>
                      </graphic>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -63,7 +70,10 @@
                         <Font name="Century Gothic Bold" size="13.0" />
                      </font>
                      <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/sol.png" />
+                           </image></ImageView>
                      </graphic>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -74,7 +84,10 @@
                         <Font name="Century Gothic Bold" size="13.0" />
                      </font>
                      <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/usuario.png" />
+                           </image></ImageView>
                      </graphic>
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -87,9 +100,9 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="420.0" prefWidth="412.0">
                <children>
-                  <VBox alignment="TOP_CENTER" prefHeight="420.0" prefWidth="282.0">
+                  <VBox alignment="TOP_CENTER" prefHeight="420.0" prefWidth="411.0">
                      <children>
-                        <Button fx:id="btnSymbolSound" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences">
+                        <Button fx:id="btnSymbolSound" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" prefHeight="95.0" prefWidth="95.0">
                            <graphic>
                               <Label fx:id="lbSymbol" alignment="CENTER" prefHeight="143.0" prefWidth="91.0" text="Label">
                                  <font>
@@ -98,12 +111,7 @@
                               </Label>
                            </graphic>
                         </Button>
-                        <Button fx:id="btnMoreInformation" mnemonicParsing="false" onMouseClicked="#eventButtonInformation" style="-fx-translate-x: 33; -fx-translate-y: -100;" text="+">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Button>
-                        <VBox prefHeight="331.0" prefWidth="282.0" style="-fx-translate-y: -20;">
+                        <VBox prefHeight="331.0" prefWidth="282.0" style="-fx-translate-y: 10;">
                            <children>
                               <HBox alignment="CENTER" prefHeight="35.0" prefWidth="252.0">
                                  <children>
@@ -121,7 +129,7 @@
                                        </font></Label>
                                  </children>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 30;">
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 100;">
                                  <children>
                                     <Button fx:id="btnExampleSound1" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" text="+">
                                        <HBox.margin>
@@ -140,7 +148,7 @@
                                     <Insets left="10.0" />
                                  </padding>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 30;">
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 100;">
                                  <children>
                                     <Button fx:id="btnExampleSound2" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" text="+">
                                        <HBox.margin>
@@ -159,7 +167,7 @@
                                     <Insets left="10.0" />
                                  </padding>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 30;">
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 100;">
                                  <children>
                                     <Button fx:id="btnExampleSound3" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" text="+">
                                        <HBox.margin>
@@ -178,7 +186,7 @@
                                     <Insets left="10.0" />
                                  </padding>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 30;">
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 100;">
                                  <children>
                                     <Button fx:id="btnExampleSound4" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" text="+">
                                        <HBox.margin>
@@ -197,7 +205,7 @@
                                     <Insets left="10.0" />
                                  </padding>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 30;">
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 100;">
                                  <children>
                                     <Button fx:id="btnExampleSound5" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" text="+">
                                        <HBox.margin>
@@ -216,7 +224,7 @@
                                     <Insets left="10.0" />
                                  </padding>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 30;">
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="252.0" style="-fx-translate-x: 100;">
                                  <children>
                                     <Button fx:id="btnExampleSound6" mnemonicParsing="false" onMouseClicked="#eventSoundsExamplesSentences" text="+">
                                        <HBox.margin>
