@@ -1,21 +1,16 @@
 package com.farniks.appfoneticaipa.controller;
 
-import com.farniks.appfoneticaipa.Main;
-import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.MediaPlayer;
-import javafx.stage.Stage;
+
 
 import java.awt.*;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Objects;
+
 
 
 public class VowelsMonophthongsController{
@@ -28,11 +23,9 @@ public class VowelsMonophthongsController{
 
     private MediaPlayer mediaPlayer;
 
-    private SoundsPhonetics soundsPhonetics;
-
     public VowelsMonophthongsController() {
-        InformationExampleIpaController informationExampleIpaController = new InformationExampleIpaController();
     }
+
     public void eventMenu(MouseEvent mouseEvent) {
         Button sourceButton = (Button) mouseEvent.getSource();
         if (sourceButton == btnHome) {
@@ -78,7 +71,7 @@ public class VowelsMonophthongsController{
             musicFile = "/media/Vowels/Vocal12.mp3";
         }
 
-        soundsPhonetics = new SoundsPhonetics(musicFile);
+        SoundsPhonetics soundsPhonetics = new SoundsPhonetics(musicFile);
 
 
     }
@@ -324,57 +317,10 @@ public class VowelsMonophthongsController{
 
         }
 
-        abrirVentanaInformacion(sentence, example1, example2, example3, example4, example5, example6, symbol,
+        OpenInformation openInformation = new OpenInformation (sentence, example1, example2, example3, example4, example5, example6, symbol,
                 soundSymbol, soundSentence, soundExample1, soundExample2, soundExample3, soundExample4, soundExample5, soundExample6,selectedUrlPage , mouseEvent);
 
     }
 
-    private void abrirVentanaInformacion(
-            String sentence, String example1, String example2, String example3, String example4, String example5, String example6, String symbol,
-            String selectedSoundSymbol,String selectedSoundSentence, String selectedSoundExample1, String selectedSoundExample2, String selectedSoundExample3, String selectedSoundExample4, String selectedSoundExample5, String selectedSoundExample6, String urlPage,
-            MouseEvent event) {
 
-        try {
-            FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(Main.class.getResource("information-example-ipa.fxml")));
-            Parent root = loader.load();
-
-            // Obtener el controlador y pasar la información
-            InformationExampleIpaController controller = loader.getController();
-            controller.setInformation(
-                    sentence,
-                    example1,
-                    example2,
-                    example3,
-                    example4,
-                    example5,
-                    example6,
-                    symbol);
-
-            // Obtener el Stage actual y cerrarlo
-            Stage currentStage = (Stage) ((Button) event.getSource()).getScene().getWindow();
-            currentStage.close();
-
-            // Pasar las rutas de los archivos de audio
-            controller.setAudioFiles(
-                    selectedSoundSymbol,
-                    selectedSoundSentence,
-                    selectedSoundExample1,
-                    selectedSoundExample2,
-                    selectedSoundExample3,
-                    selectedSoundExample4,
-                    selectedSoundExample5,
-                    selectedSoundExample6,
-                    urlPage
-
-            );
-
-            // Mostrar la nueva ventana
-            Stage stage = new Stage();
-            stage.setTitle("Información IPA");
-            stage.setScene(new Scene(root));
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 }

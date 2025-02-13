@@ -1,21 +1,16 @@
 package com.farniks.appfoneticaipa.controller;
 
-import com.farniks.appfoneticaipa.Main;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.input.ContextMenuEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.MediaPlayer;
-import javafx.stage.Stage;
+
 
 import java.awt.*;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Objects;
+
 
 public class VowelsDiphthongsController {
     @FXML
@@ -27,7 +22,7 @@ public class VowelsDiphthongsController {
 
     private MediaPlayer mediaPlayer;
 
-    private SoundsPhonetics soundsPhonetics;
+    private OpenInformation openInformation;
 
     public VowelsDiphthongsController() {
         InformationExampleIpaController informationExampleIpaController = new InformationExampleIpaController();
@@ -71,71 +66,187 @@ public class VowelsDiphthongsController {
             musicFile = "/media/Diphthongs/Diptongo8.mp3";
         }
 
-        soundsPhonetics = new SoundsPhonetics(musicFile);
+        SoundsPhonetics soundsPhonetics = new SoundsPhonetics(musicFile);
 
     }
 
     public void eventButtonsMoreInformation(MouseEvent mouseEvent) {
         Button sourceButton = (Button) mouseEvent.getSource();
         // Variables por defecto
-        String symbol = "ɪ";
-        String sentence = "Ejemplo de oración";
-        String example1 = "Ejemplo 1";
-        String example2 = "Ejemplo 2";
-        String example3 = "Ejemplo 3";
-        String example4 = "Ejemplo 4";
-        String example5 = "Ejemplo 5";
-        String example6 = "Ejemplo 6";
-
+        String symbol = "eɪ";
+        String soundSymbol = "/media/Diphthongs/Diptongo1.mp3";
+        String sentence = "They play in the rain every day";
+        String soundSentence = "/media/Diphthongs/eɪ/They play in the rain every day.mp3";
+        String example1 = "day - /deɪ/";
+        String soundExample1 = "/media/Diphthongs/eɪ/day.mp3";
+        String example2 = "say - /seɪ/";
+        String soundExample2 = "/media/Diphthongs/eɪ/say.mp3";
+        String example3 = "way - /weɪ/";
+        String soundExample3 = "/media/Diphthongs/eɪ/way.mp3";
+        String example4 = "face - /feɪs/";
+        String soundExample4 = "/media/Diphthongs/eɪ/face.mp3";
+        String example5 = "rain - /reɪn/";
+        String soundExample5 = "/media/Diphthongs/eɪ/rain.mp3";
+        String example6 = "eight - /eɪt/";
+        String soundExample6 = "/media/Diphthongs/eɪ/eight.mp3";
+        String selectedUrlPage = "vowels-diphthongs.fxml";
 
         if (sourceButton == btnMoreInformation1) {
-            symbol = "ɪ";
-            sentence = "corona";
-            example1 = "Bit";
-            example2 = "Sit";
-            example3 = "Fit";
-            example4 = "Hit";
-            example5 = "Lit";
-            example6 = "Mit";
+            symbol = "eɪ";
+            soundSymbol = "/media/Diphthongs/Diptongo1.mp3";
+            sentence = "They play in the rain every day";
+            soundSentence = "/media/Diphthongs/eɪ/They play in the rain every day.mp3";
+            example1 = "Day - /deɪ/";
+            soundExample1 = "/media/Diphthongs/eɪ/day.mp3";
+            example2 = "Say - /seɪ/";
+            soundExample2 = "/media/Diphthongs/eɪ/say.mp3";
+            example3 = "Way - /weɪ/";
+            soundExample3 = "/media/Diphthongs/eɪ/way.mp3";
+            example4 = "Face - /feɪs/";
+            soundExample4 = "/media/Diphthongs/eɪ/face.mp3";
+            example5 = "Rain - /reɪn/";
+            soundExample5 = "/media/Diphthongs/eɪ/rain.mp3";
+            example6 = "Eight - /eɪt/";
+            soundExample6 = "/media/Diphthongs/eɪ/eight.mp3";
+
 
         }else if (sourceButton == btnMoreInformation2) {
+            symbol = "eɪ";
+            soundSymbol = "/media/Diphthongs/Diptongo1.mp3";
+            sentence = "They play in the rain every day";
+            soundSentence = "/media/Diphthongs/eɪ/They play in the rain every day.mp3";
+            example1 = "Day - /deɪ/";
+            soundExample1 = "/media/Diphthongs/eɪ/day.mp3";
+            example2 = "Say - /seɪ/";
+            soundExample2 = "/media/Diphthongs/eɪ/say.mp3";
+            example3 = "Way - /weɪ/";
+            soundExample3 = "/media/Diphthongs/eɪ/way.mp3";
+            example4 = "Face - /feɪs/";
+            soundExample4 = "/media/Diphthongs/eɪ/face.mp3";
+            example5 = "Rain - /reɪn/";
+            soundExample5 = "/media/Diphthongs/eɪ/rain.mp3";
+            example6 = "Eight - /eɪt/";
+            soundExample6 = "/media/Diphthongs/eɪ/eight.mp3";
+
 
         }else if (sourceButton == btnMoreInformation3) {
+            symbol = "eɪ";
+            soundSymbol = "/media/Diphthongs/Diptongo1.mp3";
+            sentence = "They play in the rain every day";
+            soundSentence = "/media/Diphthongs/eɪ/They play in the rain every day.mp3";
+            example1 = "Day - /deɪ/";
+            soundExample1 = "/media/Diphthongs/eɪ/day.mp3";
+            example2 = "Say - /seɪ/";
+            soundExample2 = "/media/Diphthongs/eɪ/say.mp3";
+            example3 = "Way - /weɪ/";
+            soundExample3 = "/media/Diphthongs/eɪ/way.mp3";
+            example4 = "Face - /feɪs/";
+            soundExample4 = "/media/Diphthongs/eɪ/face.mp3";
+            example5 = "Rain - /reɪn/";
+            soundExample5 = "/media/Diphthongs/eɪ/rain.mp3";
+            example6 = "Eight - /eɪt/";
+            soundExample6 = "/media/Diphthongs/eɪ/eight.mp3";
+
 
         }else if (sourceButton == btnMoreInformation4) {
+            symbol = "eɪ";
+            soundSymbol = "/media/Diphthongs/Diptongo1.mp3";
+            sentence = "They play in the rain every day";
+            soundSentence = "/media/Diphthongs/eɪ/They play in the rain every day.mp3";
+            example1 = "Day - /deɪ/";
+            soundExample1 = "/media/Diphthongs/eɪ/day.mp3";
+            example2 = "Say - /seɪ/";
+            soundExample2 = "/media/Diphthongs/eɪ/say.mp3";
+            example3 = "Way - /weɪ/";
+            soundExample3 = "/media/Diphthongs/eɪ/way.mp3";
+            example4 = "Face - /feɪs/";
+            soundExample4 = "/media/Diphthongs/eɪ/face.mp3";
+            example5 = "Rain - /reɪn/";
+            soundExample5 = "/media/Diphthongs/eɪ/rain.mp3";
+            example6 = "Eight - /eɪt/";
+            soundExample6 = "/media/Diphthongs/eɪ/eight.mp3";
+
 
         }else if (sourceButton == btnMoreInformation5) {
+            symbol = "eɪ";
+            soundSymbol = "/media/Diphthongs/Diptongo1.mp3";
+            sentence = "They play in the rain every day";
+            soundSentence = "/media/Diphthongs/eɪ/They play in the rain every day.mp3";
+            example1 = "Day - /deɪ/";
+            soundExample1 = "/media/Diphthongs/eɪ/day.mp3";
+            example2 = "Say - /seɪ/";
+            soundExample2 = "/media/Diphthongs/eɪ/say.mp3";
+            example3 = "Way - /weɪ/";
+            soundExample3 = "/media/Diphthongs/eɪ/way.mp3";
+            example4 = "Face - /feɪs/";
+            soundExample4 = "/media/Diphthongs/eɪ/face.mp3";
+            example5 = "Rain - /reɪn/";
+            soundExample5 = "/media/Diphthongs/eɪ/rain.mp3";
+            example6 = "Eight - /eɪt/";
+            soundExample6 = "/media/Diphthongs/eɪ/eight.mp3";
+
 
         }else if (sourceButton == btnMoreInformation6) {
+            symbol = "eɪ";
+            soundSymbol = "/media/Diphthongs/Diptongo1.mp3";
+            sentence = "They play in the rain every day";
+            soundSentence = "/media/Diphthongs/eɪ/They play in the rain every day.mp3";
+            example1 = "Day - /deɪ/";
+            soundExample1 = "/media/Diphthongs/eɪ/day.mp3";
+            example2 = "Say - /seɪ/";
+            soundExample2 = "/media/Diphthongs/eɪ/say.mp3";
+            example3 = "Way - /weɪ/";
+            soundExample3 = "/media/Diphthongs/eɪ/way.mp3";
+            example4 = "Face - /feɪs/";
+            soundExample4 = "/media/Diphthongs/eɪ/face.mp3";
+            example5 = "Rain - /reɪn/";
+            soundExample5 = "/media/Diphthongs/eɪ/rain.mp3";
+            example6 = "Eight - /eɪt/";
+            soundExample6 = "/media/Diphthongs/eɪ/eight.mp3";
+
 
         }else if (sourceButton == btnMoreInformation7) {
+            symbol = "eɪ";
+            soundSymbol = "/media/Diphthongs/Diptongo1.mp3";
+            sentence = "They play in the rain every day";
+            soundSentence = "/media/Diphthongs/eɪ/They play in the rain every day.mp3";
+            example1 = "Day - /deɪ/";
+            soundExample1 = "/media/Diphthongs/eɪ/day.mp3";
+            example2 = "Say - /seɪ/";
+            soundExample2 = "/media/Diphthongs/eɪ/say.mp3";
+            example3 = "Way - /weɪ/";
+            soundExample3 = "/media/Diphthongs/eɪ/way.mp3";
+            example4 = "Face - /feɪs/";
+            soundExample4 = "/media/Diphthongs/eɪ/face.mp3";
+            example5 = "Rain - /reɪn/";
+            soundExample5 = "/media/Diphthongs/eɪ/rain.mp3";
+            example6 = "Eight - /eɪt/";
+            soundExample6 = "/media/Diphthongs/eɪ/eight.mp3";
+
 
         }else if (sourceButton == btnMoreInformation8) {
+            symbol = "eɪ";
+            soundSymbol = "/media/Diphthongs/Diptongo1.mp3";
+            sentence = "They play in the rain every day";
+            soundSentence = "/media/Diphthongs/eɪ/They play in the rain every day.mp3";
+            example1 = "Day - /deɪ/";
+            soundExample1 = "/media/Diphthongs/eɪ/day.mp3";
+            example2 = "Say - /seɪ/";
+            soundExample2 = "/media/Diphthongs/eɪ/say.mp3";
+            example3 = "Way - /weɪ/";
+            soundExample3 = "/media/Diphthongs/eɪ/way.mp3";
+            example4 = "Face - /feɪs/";
+            soundExample4 = "/media/Diphthongs/eɪ/face.mp3";
+            example5 = "Rain - /reɪn/";
+            soundExample5 = "/media/Diphthongs/eɪ/rain.mp3";
+            example6 = "Eight - /eɪt/";
+            soundExample6 = "/media/Diphthongs/eɪ/eight.mp3";
 
         }
-        
-        abrirVentanaInformacion(sentence, example1, example2, example3, example4, example5, example6, symbol);
-    }
 
-    private void abrirVentanaInformacion(
-            String sentence, String example1, String example2, String example3,
-            String example4, String example5, String example6, String symbol) {
+        OpenInformation openInformation = new OpenInformation(sentence, example1, example2, example3, example4, example5, example6, symbol,
+                soundSymbol, soundSentence, soundExample1, soundExample2, soundExample3, soundExample4, soundExample5, soundExample6,selectedUrlPage , mouseEvent);
 
-        try {
-            FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(Main.class.getResource("information-example-ipa.fxml")));
-            Parent root = loader.load();
-
-            // Obtener el controlador y pasar la información
-            InformationExampleIpaController controller = loader.getController();
-            controller.setInformation(sentence, example1, example2, example3, example4, example5, example6, symbol);
-
-            // Mostrar la nueva ventana
-            Stage stage = new Stage();
-            stage.setTitle("Información IPA");
-            stage.setScene(new Scene(root));
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }
+

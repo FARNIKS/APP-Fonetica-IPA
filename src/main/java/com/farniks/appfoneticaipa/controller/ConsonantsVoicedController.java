@@ -20,8 +20,6 @@ public class ConsonantsVoicedController {
 
     private MediaPlayer mediaPlayer;
 
-    private SoundsPhonetics soundsPhonetics;
-
     public ConsonantsVoicedController() {
     }
 
@@ -78,9 +76,324 @@ public class ConsonantsVoicedController {
             musicFile = "/media/Voiced/Voiced16.mp3";
         }
 
-        soundsPhonetics = new SoundsPhonetics(musicFile);
+        SoundsPhonetics soundsPhonetics = new SoundsPhonetics(musicFile);
     }
 
     public void eventButtonsMoreInformationConsonants(MouseEvent mouseEvent) {
+        Button sourceButton = (Button) mouseEvent.getSource();
+        // Variables por defecto
+        String symbol = "b";
+        String soundSymbol = "/media/Voiced/Voiced1.mp3";
+        String sentence = "Ben bought a new bike";
+        String soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+        String example1 = "Boy - /bɔɪ/";
+        String soundExample1 = "/media/Voiced/b/boy.mp3";
+        String example2 = "Big - /bɪɡ/";
+        String soundExample2 = "/media/Voiced/b/big.mp3";
+        String example3 = "Bag - /bæɡ/";
+        String soundExample3 = "/media/Voiced/b/bag.mp3";
+        String example4 = "Book - /bʊk/";
+        String soundExample4 = "/media/Voiced/b/book.mp3";
+        String example5 = "Baby - /ˈbeɪbi/";
+        String soundExample5 = "/media/Voiced/b/baby.mp3";
+        String example6 = "Blue - /bluː/";
+        String soundExample6 = "/media/Voiced/b/blue.mp3";
+        String selectedUrlPage = "consonants-voiced.fxml";
+
+        if (sourceButton == btnMoreInformation1) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/big.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+
+
+        }else if (sourceButton == btnMoreInformation2) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }else if (sourceButton == btnMoreInformation3) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }else if (sourceButton == btnMoreInformation4) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }else if (sourceButton == btnMoreInformation5) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }else if (sourceButton == btnMoreInformation6) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }else if (sourceButton == btnMoreInformation7) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }else if (sourceButton == btnMoreInformation8) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }else if (sourceButton == btnMoreInformation9) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }else if (sourceButton == btnMoreInformation10) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }else if (sourceButton == btnMoreInformation11) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }else if (sourceButton == btnMoreInformation12) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }else if (sourceButton == btnMoreInformation13) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }else if (sourceButton == btnMoreInformation14) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }else if (sourceButton == btnMoreInformation15) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }else if (sourceButton == btnMoreInformation16) {
+            symbol = "b";
+            soundSymbol = "/media/Voiced/Voiced1.mp3";
+            sentence = "Ben bought a new bike";
+            soundSentence = "/media/Voiced/b/Ben bought a new bike.mp3";
+            example1 = "Boy - /bɔɪ/";
+            soundExample1 = "/media/Voiced/b/boy.mp3";
+            example2 = "Big - /bɪɡ/";
+            soundExample2 = "/media/Voiced/b/eat.mp3";
+            example3 = "Bag - /bæɡ/";
+            soundExample3 = "/media/Voiced/b/bag.mp3";
+            example4 = "Book - /bʊk/";
+            soundExample4 = "/media/Voiced/b/book.mp3";
+            example5 = "Baby - /ˈbeɪbi/";
+            soundExample5 = "/media/Voiced/b/baby.mp3";
+            example6 = "Blue - /bluː/";
+            soundExample6 = "/media/Voiced/b/blue.mp3";
+
+        }
+
+        OpenInformation openInformation = new OpenInformation (sentence, example1, example2, example3, example4, example5, example6, symbol,
+                soundSymbol, soundSentence, soundExample1, soundExample2, soundExample3, soundExample4, soundExample5, soundExample6,selectedUrlPage , mouseEvent);
+
     }
 }
