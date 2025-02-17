@@ -1,5 +1,6 @@
 package com.farniks.appfoneticaipa.controller;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -13,7 +14,7 @@ import java.net.URISyntaxException;
 
 public class InformationExampleIpaController {
     @FXML
-    Button btnHome, btnMenu, btnMode, btnGithub,
+    Button btnHome, btnMenu, btnGithub, btnExit,
             btnSentenceSound,
             btnExampleSound1, btnExampleSound2, btnExampleSound3, btnExampleSound4, btnExampleSound5, btnExampleSound6,
             btnSymbolSound;
@@ -22,7 +23,7 @@ public class InformationExampleIpaController {
 
     private final ChangePage changePage = new ChangePage();
 
-    private SoundsPhonetics soundsPhonetics;
+    protected SoundsPhonetics soundsPhonetics;
 
     private String audioSymbol, audioSentence, audioExample1, audioExample2, audioExample3, audioExample4, audioExample5, audioExample6, urlPage;
 
@@ -34,8 +35,8 @@ public class InformationExampleIpaController {
         Button sourceButton = (Button) mouseEvent.getSource();
         if (sourceButton == btnHome) {
             changePage.loadStage("home.fxml", mouseEvent, "Vocales");
-        }else if (sourceButton == btnMode) {
-            System.out.println("Mode");
+        }else if (sourceButton == btnExit) {
+            Platform.exit();
         }else if (sourceButton == btnMenu) {
             changePage.loadStage(urlPage, mouseEvent, "Vocales");
         }else if (sourceButton == btnGithub){

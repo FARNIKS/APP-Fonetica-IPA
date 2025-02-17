@@ -1,6 +1,7 @@
 
 package com.farniks.appfoneticaipa.controller;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
@@ -12,7 +13,7 @@ import java.net.URISyntaxException;
 
 public class HomeController {
     @FXML
-    Button btnMode,btnGithub,
+    Button btnExit,btnGithub,
             btnVocales,btnDiptongos,btnConsonantesConVoz,btnConsonantesSinVoz;
 
     private final ChangePage changePage = new ChangePage();
@@ -22,8 +23,8 @@ public class HomeController {
 
     public void eventMenu(MouseEvent mouseEvent) {
         Button sourceButton = (Button) mouseEvent.getSource();
-        if (sourceButton == btnMode) {
-            System.out.println("Mode");
+        if (sourceButton == btnExit) {
+            Platform.exit();
         }else if (sourceButton == btnGithub){
             try {
                 Desktop.getDesktop().browse(new URI("https://github.com/FARNIKS/APP-Fonetica-IPA"));

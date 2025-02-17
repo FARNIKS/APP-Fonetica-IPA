@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -21,7 +22,9 @@ public class OpenInformation {
             String selectedSoundSymbol,String selectedSoundSentence, String selectedSoundExample1, String selectedSoundExample2, String selectedSoundExample3, String selectedSoundExample4, String selectedSoundExample5, String selectedSoundExample6, String urlPage,
             MouseEvent event) {
 
+
         try {
+            Image logo = new Image(Main.class.getResourceAsStream("/img/Logo fonetica.png"));
             FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(Main.class.getResource("information-example-ipa.fxml")));
             Parent root = loader.load();
 
@@ -57,6 +60,8 @@ public class OpenInformation {
 
             // Mostrar la nueva ventana
             Stage stage = new Stage();
+            stage.getIcons().add(logo);
+            stage.setResizable(false);
             stage.setTitle("Información IPA");
             stage.setScene(new Scene(root));
             stage.show();

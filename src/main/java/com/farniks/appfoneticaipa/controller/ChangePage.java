@@ -7,6 +7,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 import javafx.stage.WindowEvent;
@@ -18,7 +19,7 @@ public class ChangePage {
     public ChangePage() {
     }
     protected void loadStage(String url, Event event,String state){
-        //Image logo = new Image(Main.class.getResourceAsStream("/img/logo.png"));
+        Image logo = new Image(Main.class.getResourceAsStream("/img/Logo fonetica.png"));
         try {
             // Get the source of the event and the current scene
             Object eventSource =event.getSource();
@@ -32,14 +33,14 @@ public class ChangePage {
 
             // Load the FXML file using a FXMLLoader
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(url));
-            Scene scene = new Scene(fxmlLoader.load(), 412, 480);
+            Scene scene = new Scene(fxmlLoader.load(), 432, 480);
             stage.setScene(scene);
 
             // Create a new Stage and configure its appearance
             Stage newStage = new Stage();
-            //newStage.getIcons().add(logo);
+            newStage.getIcons().add(logo);
             newStage.setResizable(false);
-            newStage.setTitle("Home"+state);
+            newStage.setTitle("IPA-"+state);
             newStage.setScene(scene);
             newStage.show();
 

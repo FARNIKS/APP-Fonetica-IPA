@@ -1,5 +1,6 @@
 package com.farniks.appfoneticaipa.controller;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
@@ -15,13 +16,13 @@ import java.net.URISyntaxException;
 
 public class VowelsMonophthongsController{
     @FXML
-    Button btnHome, btnMode, btnGithub,
+    Button btnHome, btnExit, btnGithub,
             btnSoundVocal1, btnSoundVocal2, btnSoundVocal3, btnSoundVocal4, btnSoundVocal5, btnSoundVocal6,btnSoundVocal7,btnSoundVocal8,btnSoundVocal9,btnSoundVocal10,btnSoundVocal11,btnSoundVocal12,
             btnMoreInformation1,btnMoreInformation2,btnMoreInformation3,btnMoreInformation4,btnMoreInformation5,btnMoreInformation6,btnMoreInformation7,btnMoreInformation8,btnMoreInformation9,btnMoreInformation10,btnMoreInformation11,btnMoreInformation12;
 
     private final ChangePage changePage = new ChangePage();
 
-    private MediaPlayer mediaPlayer;
+    protected SoundsPhonetics soundsPhonetics;
 
     public VowelsMonophthongsController() {
     }
@@ -30,8 +31,8 @@ public class VowelsMonophthongsController{
         Button sourceButton = (Button) mouseEvent.getSource();
         if (sourceButton == btnHome) {
             changePage.loadStage("home.fxml", mouseEvent, "Vocales");
-        }else if (sourceButton == btnMode) {
-            System.out.println("Mode");
+        }else if (sourceButton == btnExit) {
+            Platform.exit();
         }else if (sourceButton == btnGithub){
             try {
                 Desktop.getDesktop().browse(new URI("https://github.com/FARNIKS/APP-Fonetica-IPA"));
@@ -71,7 +72,7 @@ public class VowelsMonophthongsController{
             musicFile = "/media/Vowels/Vocal12.mp3";
         }
 
-        SoundsPhonetics soundsPhonetics = new SoundsPhonetics(musicFile);
+        soundsPhonetics = new SoundsPhonetics(musicFile);
 
 
     }
